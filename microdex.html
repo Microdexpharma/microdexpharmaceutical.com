@@ -1,0 +1,299 @@
+<link rel="stylesheet" href="aos-by-red.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      Microdex Pharmaceutical 
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="about.html">About us</a>
+    <a href="our products.html">products</a>
+    <a href="microdex.html">Home</a>
+  </div>
+</div>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+</style>
+<br/><br/><br/>
+<div class="cay"><img style="width:95%;" src="333.jpg"></div>
+<style>
+@property --gradient-angle {
+syntax: "<angle>";
+initial-value: 0deg;
+inherits: false;
+}
+:root {
+--clr-1: skyblue;
+--clr-2: #ADD8E6;
+--clr-3: #b7f7f6;
+--clr-4: #7ef7f3;
+}
+.cay {
+height: 40vh;
+aspect-ratio: 1.6 / 1;
+border-radius: 0.5rem;
+position: relative;
+margin: auto;
+text-align: center;
+} 
+.cay::before,
+.cay::after{
+content: "";
+position: absolute;
+inset: -.5rem;
+z-index: -1;
+background: conic-gradient(from var(--gradient-angle), var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4), var(--clr-1), var(--clr-2));
+border-radius: inherit;
+animation: rotation 20s linear infinite;
+}
+.cay::after {
+filter: blur(2rem);
+}
+@keyframes rotation {
+0% { --gradient-angle: 0deg; }
+100% { --gradient-angle: 360deg; }
+}
+</style>
+<br/><br/><br/>
+<div class="vet"><h1 style="font-family: "Roboto", sans-serif;">Shaping Healthcare <br>For the sake of your health</br></h1>
+<img style="width:32%;outline: 1px solid black;position:absolute;top:450;right:50;" src="medibest.jpg">
+<div class="mat"><h1 style="font-family: "Roboto", sans-serif;font-weight: bold;">Providing high quality medicine</h1></div></div>
+<br/><br/>
+<h1 style="font-size: 46.5px;"> ✔️Quality    ✔️affordability </h1>
+<style>
+.vet{
+background-color: #d7faf3;
+width: 1300px;
+height: 350px;
+padding: 10px;
+font-size: 28px;
+}
+.mat{
+background-color: #78accf;
+width: 1290px;
+height: 150px;
+padding: 10px;
+color: white;
+font-size: 21px;
+text-align: left;
+}
+</style>
+<br/><br/><br/>
+<div class="btn" ><a style="color: white;" href="about.html">About Us</a></div>
+<style>
+.btn{
+font-family: "Roboto", sans-serif;
+font-size: 28px;
+font-weight: bold;
+background: skyblue;
+width: 230px;
+padding: 20px;
+outline: 4px solid white;
+margin: Auto;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+color: #fff;
+border-radius: 1px;
+cursor: pointer;
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: box-shadow, transform;
+transition-property: box-shadow, transform;
+}
+.btn:hover, .btn:focus, .btn:active{
+box-shadow: 0 0 20px rgba(0, 0, 0, 5);
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+</style>
+<h1 style="font-size: 66.3px;text-align:center;"data-aos="fade-up">OUR VISION</H1>
+<h1 style="text-align:center;font-size: 66px;"data-aos="fade-up"> Quality </h1>
+<div class="box"data-aos="fade-up"><img style="width:50%;outline: 1px solid black;float: left;" src="rrr.jpg">
+<div class="moon"><h1 style="text-align: center;font-size:28.5px;">
+Our company<br> prioritizes quality<br> we provide good standards<br> in every stage of production<br> to ensure safety of our <br>medicines, to earn trust.</h1></div></div>
+<style>
+.box {
+padding: 2em;
+width: 75vw;
+height: 65vh;
+background-color: #ededed;
+display: block;
+margin: auto;
+}
+.moon{
+padding: 2em;
+width: 70vw;
+height: 45vh;
+background-color: #fafafa;
+}
+</style>
+<hr>
+<h1 style="text-align:center;font-size: 66px;"data-aos="fade-up"> Affordability </h1>
+<div class="sus"data-aos="fade-up"><img style="width:50%;outline: 1px solid black;float: left;" src="666.jpg">
+<div class="joy"><h1 style="text-align: center;font-size:28.5px;">
+Our company<br> we make sure that<br> our medicines stay  <br> in reach for everyone<br> and everyone can access <br>good medicines</h1></div></div>
+<style>
+.sus {
+padding: 2em;
+width: 75vw;
+height: 65vh;
+background-color: #f7ff17;
+display: block;
+margin: auto;
+}
+.joy{
+padding: 2em;
+width: 70vw;
+height: 45vh;
+background-color: white;
+}
+</style>
+</div>
+<hr>
+<br/>
+
+<div class="bt"><a style="color: white;" href="Our Products.html">Our products</a></div>
+<br/><br/><br/><br/>
+<style>
+.bt{
+font-family: "Roboto", sans-serif;
+font-size: 28px;
+font-weight: bold;
+background: skyblue;
+width: 230px;
+padding: 20px;
+outline: 4px solid white;
+margin: Auto;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+color: #fff;
+border-radius: 1px;
+cursor: pointer;
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: box-shadow, transform;
+transition-property: box-shadow, transform;
+}
+.bt:hover, .bt:focus, .bt:active{
+box-shadow: 0 0 20px rgba(0, 0, 0, 5);
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+</style>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+      });
+    </script>

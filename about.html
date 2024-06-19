@@ -1,0 +1,153 @@
+<link rel="stylesheet" href="aos-by-red.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      Microdex Pharmaceutical 
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="about.html">About us</a>
+    <a href="our products.html">products</a>
+    <a href="microdex.html">Home</a>
+  </div>
+</div>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+</style>
+<br/><br/><br/>
+<h1 style ="font-size:48px;text-align: center;">About Us </h1>
+<div class="dffd"><img style="width:50%;outline: 1px solid black;float: left;" src="wwe.jpg">
+<div class="weew"><h1 style="text-align: center;font-size:28.5px;">
+ At Microdex we care for your health<br>so we provide high qualiy medicines</h1></div></div>
+<style>
+.dffd {
+padding: 2em;
+width: 75vw;
+height: 65vh;
+background-color: #98fad3;
+display: block;
+margin: auto;
+}
+.weew{
+padding: 2em;
+width: 70vw;
+height: 45vh;
+background-color: #d4ffee;
+}
+</style>
+<br>
+<h1 style ="font-size:48px;text-align: center;">WE CARE FOR OUR CUSTOMERS</h1> 
+
+
+<h1 style ="font-size:48px;text-align: center;">THUS, WE MAINTAIN<br>AFFORDABILITY </h1>
+
+
+
+
+
